@@ -58,7 +58,8 @@ class GamePage extends Component {
   }
 
   generateOpponentsChoice = () => {
-    const opponentsChoice = choicesList[Math.floor(Math.random() * 3)].id
+    const opponentsChoice =
+      choicesList[Math.floor(Math.random() * choicesList.length)].id
     this.setState({opponentsChoice})
     console.log(opponentsChoice)
   }
